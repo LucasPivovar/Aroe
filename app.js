@@ -608,7 +608,7 @@ function initFaqAccordion() {
 }
 
 /* --------------------------------------------------------------------------
-   12. Safe GSAP + ScrollTrigger Page Animations
+   12. Section-by-Section GSAP + ScrollTrigger Staggered Animations ("Um por um")
    -------------------------------------------------------------------------- */
 function initGsapAnimations() {
   if (typeof gsap === 'undefined') return;
@@ -617,29 +617,127 @@ function initGsapAnimations() {
     gsap.registerPlugin(ScrollTrigger);
   }
 
-  // Hero Entrance
-  gsap.from('.gsap-reveal-title, .gsap-reveal-sub, .gsap-reveal-btn', {
+  // 1. Hero Entrance
+  gsap.from('.hero-badge, .gsap-reveal-title, .gsap-reveal-sub, .hero-cta-group, .hero-stat-pill', {
     duration: 1,
-    y: 30,
+    y: 35,
     opacity: 0,
+    stagger: 0.15,
+    ease: 'power3.out',
+    clearProps: 'all'
+  });
+
+  if (typeof ScrollTrigger === 'undefined') return;
+
+  // 2. Sobre a Aroe (#about) — Cards staggered 1 by 1
+  gsap.from('.about-card', {
+    scrollTrigger: {
+      trigger: '#about',
+      start: 'top 80%'
+    },
+    y: 40,
+    opacity: 0,
+    duration: 0.7,
     stagger: 0.15,
     ease: 'power2.out',
     clearProps: 'all'
   });
 
-  // ScrollTrigger Animations
-  if (typeof ScrollTrigger !== 'undefined') {
-    gsap.from('.about-card, .problem-item, .differential-row, .workflow-card, .faq-item', {
-      scrollTrigger: {
-        trigger: 'body',
-        start: 'top 90%'
-      },
-      y: 25,
-      opacity: 0,
-      duration: 0.6,
-      stagger: 0.08,
-      ease: 'power2.out',
-      clearProps: 'all'
-    });
-  }
+  // 3. Desafios do Mercado (#problems) — Staggered 1 by 1
+  gsap.from('.problem-item', {
+    scrollTrigger: {
+      trigger: '#problems',
+      start: 'top 80%'
+    },
+    x: -30,
+    opacity: 0,
+    duration: 0.7,
+    stagger: 0.12,
+    ease: 'power2.out',
+    clearProps: 'all'
+  });
+
+  // 4. A Solução Aroe (#differentials) — Rows staggered 1 by 1
+  gsap.from('.differential-row', {
+    scrollTrigger: {
+      trigger: '#differentials',
+      start: 'top 80%'
+    },
+    y: 35,
+    opacity: 0,
+    duration: 0.7,
+    stagger: 0.12,
+    ease: 'power2.out',
+    clearProps: 'all'
+  });
+
+  // 5. Nosso Processo (#workflow) — Cards staggered 1 by 1
+  gsap.from('.workflow-card', {
+    scrollTrigger: {
+      trigger: '#workflow',
+      start: 'top 80%'
+    },
+    y: 40,
+    scale: 0.95,
+    opacity: 0,
+    duration: 0.7,
+    stagger: 0.15,
+    ease: 'power2.out',
+    clearProps: 'all'
+  });
+
+  // 6. Portfólio (#portfolio) — Stats & Arc Deck cards staggered 1 by 1
+  gsap.from('.stat-box-clean', {
+    scrollTrigger: {
+      trigger: '.portfolio-stats-grid',
+      start: 'top 85%'
+    },
+    y: 30,
+    opacity: 0,
+    duration: 0.6,
+    stagger: 0.12,
+    ease: 'back.out(1.5)',
+    clearProps: 'all'
+  });
+
+  gsap.from('.arc-card', {
+    scrollTrigger: {
+      trigger: '#arc-deck',
+      start: 'top 85%'
+    },
+    y: 60,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.1,
+    ease: 'power3.out',
+    clearProps: 'all'
+  });
+
+  // 7. Dúvidas FAQ (#faq) — Accordions staggered 1 by 1
+  gsap.from('.faq-item', {
+    scrollTrigger: {
+      trigger: '#faq',
+      start: 'top 80%'
+    },
+    y: 30,
+    opacity: 0,
+    duration: 0.6,
+    stagger: 0.1,
+    ease: 'power2.out',
+    clearProps: 'all'
+  });
+
+  // 8. CTA Final (#cta) — Left text & Right form
+  gsap.from('.cta-left-text, .cta-right-form-wrapper', {
+    scrollTrigger: {
+      trigger: '#cta',
+      start: 'top 80%'
+    },
+    y: 40,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.2,
+    ease: 'power3.out',
+    clearProps: 'all'
+  });
 }
