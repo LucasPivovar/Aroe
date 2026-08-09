@@ -276,11 +276,11 @@ h3 {
    -------------------------------------------------------------------------- */
 .header.floating-header {
   position: fixed;
-  top: 16px;
+  top: 14px;
   left: 50%;
   transform: translateX(-50%);
-  width: min(1380px, calc(100% - 32px));
-  height: 64px;
+  width: min(1200px, calc(100% - 32px));
+  height: 52px;
   background-color: transparent;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
@@ -289,15 +289,15 @@ h3 {
   border: 1px solid transparent;
   box-shadow: none;
   transition: all 0.35s ease;
-  padding: 0 24px;
+  padding: 0 20px;
 }
 
 .header.floating-header.scrolled {
-  background-color: rgba(38, 20, 16, 0.92);
+  background-color: rgba(38, 20, 16, 0.94);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(246, 200, 161, 0.2);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.25);
 }
 
 .header-container {
@@ -311,11 +311,11 @@ h3 {
 .brand-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .header-logo-img {
-  height: 38px;
+  height: 28px;
   width: auto;
   display: block;
   filter: brightness(0) invert(1) opacity(0.95);
@@ -324,7 +324,7 @@ h3 {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 20px;
 }
 
 .nav-item {
@@ -1316,39 +1316,35 @@ section[id] {
 }
 
 .arc-badge {
-  font-size: clamp(0.6rem, 0.7vw, 0.7rem);
+  font-size: 0.62rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--semente);
   background: rgba(255, 255, 255, 0.16);
-  padding: 4px 10px;
-  border-radius: 8px;
+  padding: 4px 8px;
+  border-radius: 6px;
   max-width: 100%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  line-height: 1.25;
   display: inline-block;
+  white-space: normal;
+  word-break: normal;
 }
 
 .arc-card-body h3 {
-  font-size: clamp(1rem, 1.25vw, 1.3rem);
+  font-size: 1.15rem;
   color: #FFFFFF;
   font-weight: 700;
   line-height: 1.2;
-  margin-top: 10px;
+  margin-top: 8px;
   word-break: break-word;
 }
 
 .arc-card-body p {
-  font-size: clamp(0.75rem, 0.85vw, 0.85rem);
+  font-size: 0.78rem;
   color: rgba(255, 255, 255, 0.88);
   margin-top: 6px;
-  line-height: 1.4;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  line-height: 1.35;
 }
 
 /* --------------------------------------------------------------------------
@@ -1356,32 +1352,11 @@ section[id] {
    -------------------------------------------------------------------------- */
 @media (max-width: 1600px) {
   .portfolio-arc-deck {
-    height: 410px;
-  }
-  .arc-card {
-    width: 230px;
-    height: 330px;
-    margin: 0 -16px;
-    border-radius: 16px;
-  }
-  .arc-card-body {
-    padding: 22px 18px;
-  }
-  .arc-card-body h3 {
-    font-size: 1.3rem;
-  }
-  .arc-card-body p {
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 1400px) {
-  .portfolio-arc-deck {
     height: 380px;
   }
   .arc-card {
-    width: 205px;
-    height: 305px;
+    width: 200px;
+    height: 295px;
     margin: 0 -14px;
     border-radius: 14px;
   }
@@ -1389,60 +1364,82 @@ section[id] {
     padding: 18px 14px;
   }
   .arc-card-body h3 {
-    font-size: 1.15rem;
-    line-height: 1.25;
+    font-size: 1.1rem;
   }
   .arc-card-body p {
-    font-size: 0.8rem;
-    line-height: 1.4;
-  }
-  .arc-badge {
-    font-size: 0.65rem;
-    padding: 3px 8px;
-  }
-  .arc-card-btn {
-    padding: 8px 14px;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .portfolio-arc-deck {
     height: 350px;
   }
   .arc-card {
     width: 180px;
-    height: 280px;
+    height: 275px;
     margin: 0 -12px;
+    border-radius: 12px;
+  }
+  .arc-card-body {
+    padding: 14px 12px;
   }
   .arc-card-body h3 {
-    font-size: 1.05rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-top: 6px;
   }
   .arc-card-body p {
+    font-size: 0.75rem;
+    line-height: 1.3;
+  }
+  .arc-badge {
+    font-size: 0.58rem;
+    padding: 3px 6px;
+  }
+  .arc-card-btn {
+    padding: 6px 12px;
     font-size: 0.75rem;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .portfolio-arc-deck {
     height: 330px;
   }
   .arc-card {
     width: 165px;
-    height: 260px;
+    height: 255px;
     margin: 0 -10px;
-  }
-  .arc-card-header {
-    height: 32px;
-  }
-  .arc-card-url {
-    font-size: 0.65rem;
   }
   .arc-card-body h3 {
     font-size: 0.95rem;
   }
   .arc-card-body p {
     font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .portfolio-arc-deck {
+    height: 310px;
+  }
+  .arc-card {
+    width: 150px;
+    height: 240px;
+    margin: 0 -8px;
+  }
+  .arc-card-header {
+    height: 28px;
+  }
+  .arc-card-url {
+    font-size: 0.6rem;
+  }
+  .arc-card-body h3 {
+    font-size: 0.88rem;
+  }
+  .arc-card-body p {
+    font-size: 0.68rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -2504,8 +2501,29 @@ section[id] {
 }
 
 /* --------------------------------------------------------------------------
-   17. Comprehensive System Responsiveness & Arc Deck Mobile Carousel
+   17. Large Desktop Media Query (1920px+) & Mobile Responsiveness
    -------------------------------------------------------------------------- */
+@media (min-width: 1601px) {
+  .header.floating-header {
+    height: 64px;
+    width: min(1380px, calc(100% - 32px));
+    padding: 0 24px;
+  }
+  .header-logo-img {
+    height: 36px;
+  }
+  .nav-menu {
+    gap: 28px;
+  }
+  .nav-link {
+    font-size: 0.9rem;
+  }
+  .header-actions .btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero-grid,
   .lead-magnet-card,
@@ -2546,23 +2564,48 @@ section[id] {
 }
 
 @media (max-width: 768px) {
+  .header.floating-header {
+    top: 10px;
+    height: 52px;
+    width: calc(100% - 24px);
+    padding: 0 16px;
+  }
+
   .nav-menu {
     position: fixed;
-    top: var(--header-height);
-    left: 0;
-    width: 100%;
-    background-color: var(--casca);
+    top: 72px;
+    left: 12px;
+    right: 12px;
+    width: auto;
+    background-color: rgba(38, 20, 16, 0.96);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 20px;
+    border: 1px solid rgba(246, 200, 161, 0.2);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    padding: 24px 20px;
     flex-direction: column;
     align-items: flex-start;
-    padding: 24px;
     gap: 16px;
-    border-bottom: 1px solid rgba(246, 200, 161, 0.2);
     display: none;
-    z-index: 999;
+    z-index: 10000;
   }
 
   .nav-menu.mobile-open {
     display: flex;
+    animation: mobileMenuSlide 0.3s ease;
+  }
+
+  .nav-item {
+    width: 100%;
+    border-bottom: 1px solid rgba(246, 200, 161, 0.1);
+    padding-bottom: 10px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    color: var(--semente);
+    width: 100%;
   }
 
   .mobile-menu-toggle {
