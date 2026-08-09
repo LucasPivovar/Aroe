@@ -1105,19 +1105,44 @@ h3 {
   margin-top: 48px;
 }
 
+/* Global Scroll Margin for Floating Header */
+section[id] {
+  scroll-margin-top: 96px;
+}
+
 /* --------------------------------------------------------------------------
    14.5 Portfolio Section, 3D Arc Fan Deck & Infinite Drag Modal
    -------------------------------------------------------------------------- */
 .portfolio-section {
-  padding: 100px 0 110px 0;
+  padding: 120px 0 120px 0;
   background-color: var(--papel-2);
   border-top: 1px solid var(--line);
 }
 
-/* Quote & Stats (Estilo Imagem 1) */
+/* Quote & Stats */
 .portfolio-quote-block {
   max-width: 900px;
   margin: 0 auto 80px auto;
+}
+
+.portfolio-showcase-block {
+  margin-top: 60px;
+  padding-top: 24px;
+}
+
+.portfolio-arc-container {
+  width: 100%;
+  padding: 40px 0 60px 0;
+  margin-top: 32px;
+  overflow: visible;
+}
+
+.portfolio-arc-deck {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 480px;
+  position: relative;
 }
 
 .quote-rotator-wrapper {
@@ -2344,7 +2369,7 @@ h3 {
 }
 
 /* --------------------------------------------------------------------------
-   17. Responsive Media Queries
+   17. Comprehensive System Responsiveness & Arc Deck Mobile Carousel
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
   .hero-grid,
@@ -2353,8 +2378,15 @@ h3 {
   .portal-banner,
   .calculator-card,
   .footer-main-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 40px;
+  }
+
+  .footer-nav-columns {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 32px;
   }
 
   .feature-grid,
@@ -2366,6 +2398,16 @@ h3 {
   .stats-grid {
     grid-template-columns: 1fr;
   }
+
+  .portfolio-arc-deck {
+    height: 420px;
+  }
+
+  .arc-card {
+    width: 240px;
+    height: 340px;
+    margin: 0 -16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2374,13 +2416,14 @@ h3 {
     top: var(--header-height);
     left: 0;
     width: 100%;
-    background-color: var(--papel);
+    background-color: var(--casca);
     flex-direction: column;
     align-items: flex-start;
     padding: 24px;
     gap: 16px;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid rgba(246, 200, 161, 0.2);
     display: none;
+    z-index: 999;
   }
 
   .nav-menu.mobile-open {
@@ -2399,7 +2442,8 @@ h3 {
   .workflow-grid,
   .reviews-grid,
   .footer-nav-columns {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 28px;
   }
 
   .hero-buttons {
@@ -2410,5 +2454,62 @@ h3 {
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+
+  /* Arc Deck becomes a sleek touch-scrollable horizontal carousel on mobile */
+  .portfolio-arc-container {
+    padding: 20px 0 30px 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .portfolio-arc-deck {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    gap: 16px;
+    padding: 20px 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .arc-card {
+    transform: none !important;
+    margin: 0 !important;
+    width: 260px;
+    height: 350px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
+
+  .arc-card::before {
+    display: none;
+  }
+
+  .cta-right-form-wrapper {
+    padding: 28px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .about-card {
+    padding: 28px 18px;
+  }
+
+  .stat-box-clean {
+    padding: 24px 18px;
+  }
+
+  .stat-box-number {
+    font-size: 2.5rem;
+  }
+
+  .portfolio-main-quote {
+    font-size: 1.35rem;
   }
 }
