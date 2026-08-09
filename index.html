@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aroe — Desenvolvemos Sites &amp; Produtos Digitais que Criam Raiz</title>
+  <meta name="description" content="Aroe | Estúdio de Desenvolvimento Web &amp; Produtos Digitais. Criamos sites, landing pages de alta conversão, CRMs e plataformas sob medida para o seu negócio.">
+  <meta property="og:title" content="Aroe — Tecnologia com Raiz">
+  <meta property="og:description" content="Desenvolvimento de sites, landing pages, CRMs e produtos digitais sob medida que geram resultados reais.">
+  <meta property="og:type" content="website">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
+
+  <!-- GSAP & ScrollTrigger Animation Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-tag">
+
+  <!-- HEADER NAVIGATION (Floating Card) -->
+  <header class="header floating-header" id="main-header">
+    <div class="header-container">
+      <!-- Brand Logo (Official Image Logo) -->
+      <a href="#" class="brand-logo" aria-label="Aroe Homepage">
+        <img src="image.png" alt="Aroe" class="header-logo-img">
+      </a>
+
+      <!-- Primary Navigation -->
+      <nav class="nav-menu" id="nav-menu">
+        <div class="nav-item">
+          <a class="nav-link" href="#about">Sobre nós</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#workflow">Processo</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfólio</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#faq">Dúvidas</a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#cta">Contato</a>
+        </div>
+      </nav>
+
+      <!-- Action CTAs -->
+      <div class="header-actions">
+        <a href="#" class="btn btn-primary" data-modal="modal-invest">Fale conosco</a>
+
+        <!-- Mobile Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- TALLER HERO SECTION WITH ORGANIC ANIMATED ACCENTS -->
+  <section class="hero-section hero-tall" id="hero">
+    <!-- Animated Organic Decorative Background Blobs -->
+    <div class="organic-blob organic-blob-1"></div>
+    <div class="organic-blob organic-blob-2"></div>
+
+    <div class="container hero-container-centered">
+      <div class="hero-content text-center">
+        <h1 class="hero-title gsap-reveal-title">
+          Criamos sites e produtos digitais que <em class="miuan-highlight">criam raiz</em> no seu negócio
+        </h1>
+        <p class="hero-description gsap-reveal-sub">
+          De landing pages de alta conversão a CRMs e plataformas web sob medida — desenvolvemos a estrutura digital que resolve problemas reais e faz sua empresa crescer.
+        </p>
+        <div class="hero-buttons gsap-reveal-btn">
+          <a href="#" class="btn btn-primary btn-lg" data-modal="modal-invest">Fale conosco</a>
+          <a href="#workflow" class="btn btn-secondary btn-lg">Conhecer nosso processo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NÓS SECTION (4 CARDS GRID) -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sec-num">01 · Sobre a Aroe</span>
+        <h2 class="about-main-title">Tecnologia com raiz, engenharia e propósito humano</h2>
+        <p class="about-main-subtitle">Desenvolvemos estruturas digitais que permanecem, encantam clientes e impulsionam o crescimento sustentável de empresas.</p>
+      </div>
+
+      <div class="about-grid about-grid-4">
+        <!-- About Card 1 -->
+        <div class="about-card text-center">
+          <div class="about-card-badge">ORIGEM DO NOME</div>
+          <h3>A madeira da aroeira</h3>
+          <p>
+            Aroeira é a árvore de madeira mais resistente do Brasil e a fonte da pimenta-rosa. O nome Aroe simboliza nossa essência: sites e plataformas fortes, flexíveis e que resistem ao tempo.
+          </p>
+        </div>
+
+        <!-- About Card 2 -->
+        <div class="about-card text-center">
+          <div class="about-card-badge">NOSSA FILOSOFIA</div>
+          <h3>Ombro a ombro com seu projeto</h3>
+          <p>
+            Não entregamos sites genéricos ou templates prontos. Entendemos a fundo a operação do seu negócio e construímos produtos digitais sob medida que convertem visitantes em clientes.
+          </p>
+        </div>
+
+        <!-- About Card 3 -->
+        <div class="about-card text-center">
+          <div class="about-card-badge">ENGENHARIA &amp; DESIGN</div>
+          <h3>Design Exclusivo &amp; Alta Conversão</h3>
+          <p>
+            Unimos estética refinada, experiência de usuário (UX/UI) impecável e arquitetura SEO de ponta para garantir visibilidade máxima nos mecanismos de busca.
+          </p>
+        </div>
+
+        <!-- About Card 4 -->
+        <div class="about-card text-center">
+          <div class="about-card-badge">PERFORMANCE &amp; ECOSSISTEMA</div>
+          <h3>Integração Total &amp; Velocidade</h3>
+          <p>
+            Desenvolvemos código leve, seguro e ultrarrápido (100/100 no Google PageSpeed) com conexão direta a CRMs, ERPs, gateways e ferramentas de automação.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMAS E GARGALOS (SEM CARDS - DESIGN EDITORIAL MINIMALISTA) -->
+  <section class="problems-section" id="problems">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sec-num">02 · Desafios do Mercado</span>
+        <h2>Sua empresa enfrenta algum destes gargalos digitais?</h2>
+        <p>A maioria das marcas perde clientes diariamente por falhas invisíveis em sua estrutura online.</p>
+      </div>
+
+      <div class="problems-list-container">
+        <div class="problem-item">
+          <div class="problem-num">01</div>
+          <div class="problem-text-content">
+            <h3>Lentidão extrema e desistência de visitantes no celular</h3>
+            <p>Sites pesados e cheios de plugins genéricos demoram mais de 3 segundos para carregar. No ambiente mobile, isso significa perder até 53% dos seus potenciais clientes antes mesmo que vejam sua oferta.</p>
+          </div>
+        </div>
+
+        <div class="problem-item">
+          <div class="problem-num">02</div>
+          <div class="problem-text-content">
+            <h3>Landing pages genéricas que atraem cliques mas não geram vendas</h3>
+            <p>Páginas sem arquitetura de persuasão e sem UX autoral passam despercebidas. Ter visitas sem conversão é queimar investimento em tráfego pago.</p>
+          </div>
+        </div>
+
+        <div class="problem-item">
+          <div class="problem-num">03</div>
+          <div class="problem-text-content">
+            <h3>Processos manuais e falta de integração com CRM/ERP</h3>
+            <p>Quando seu site não conversa com seus sistemas de vendas e automação, sua equipe perde horas copiando dados manualmente em planilhas.</p>
+          </div>
+        </div>
+
+        <div class="problem-item">
+          <div class="problem-num">04</div>
+          <div class="problem-text-content">
+            <h3>Design amador que desvaloriza a reputação da sua marca</h3>
+            <p>Interfaces ultrapassadas transmitem insegurança. Para cobrar mais caro e fechar grandes contratos B2B, sua presença digital precisa respirar autoridade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS E DORES RESOLVIDAS (SEM CARDS - LINHAS DE SOLUÇÕES SOB MEDIDA) -->
+  <section class="differentials-section" id="differentials">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sec-num">03 · A Solução Aroe</span>
+        <h2>Como a Aroe elimina esses gargalos de ponta a ponta</h2>
+        <p>Engenharia autoral, arquitetura de conversão e foco obstinado por código de alta performance.</p>
+      </div>
+
+      <div class="differentials-list-container">
+        <div class="differential-row">
+          <div class="differential-badge">PERFORMANCE</div>
+          <div class="differential-detail">
+            <h3>Código 100/100 Google PageSpeed</h3>
+            <p>Desenvolvimento limpo sem peso desnecessário. Seu site abre instantaneamente em qualquer dispositivo ou conexão móvel.</p>
+          </div>
+          <div class="differential-check">✓</div>
+        </div>
+
+        <div class="differential-row">
+          <div class="differential-badge">DESIGN AUTORAL</div>
+          <div class="differential-detail">
+            <h3>UX/UI Focado em Psicologia de Compra</h3>
+            <p>Desenhamos cada tela e botão pensando no comportamento de tomada de decisão do seu cliente para maximizar a conversão.</p>
+          </div>
+          <div class="differential-check">✓</div>
+        </div>
+
+        <div class="differential-row">
+          <div class="differential-badge">INTEGRAÇÃO</div>
+          <div class="differential-detail">
+            <h3>Ecossistema Conectado a CRMs &amp; APIs</h3>
+            <p>Leads e dados sincronizados automaticamente com HubSpot, Pipedrive, WhatsApp, ERPs e gateways de pagamento.</p>
+          </div>
+          <div class="differential-check">✓</div>
+        </div>
+
+        <div class="differential-row">
+          <div class="differential-badge">ENGENHARIA BRASILEIRA</div>
+          <div class="differential-detail">
+            <h3>Equipe Interna Sênior &amp; Suporte Próximo</h3>
+            <p>Sem intermediários ou terceirização. Você conversa diretamente com os desenvolvedores que constroem seu projeto.</p>
+          </div>
+          <div class="differential-check">✓</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-STEP WORKFLOW SECTION -->
+  <section class="workflow-section" id="workflow">
+    <div class="container">
+      <div class="section-header">
+        <span class="sec-num">04 · Nosso processo</span>
+        <h2>Como desenvolvemos seu produto digital</h2>
+        <p>Quatro etapas estruturadas para transformar sua ideia em um site ou sistema de alto impacto.</p>
+      </div>
+
+      <div class="workflow-grid">
+        <!-- Step 1 -->
+        <div class="workflow-card">
+          <div class="workflow-step-num">1</div>
+          <svg class="workflow-icon" viewBox="0 0 24 24" fill="none" stroke="var(--folha)" stroke-width="1.5">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          <p>Mapeamento de Requisitos &amp; UX/UI Design</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="workflow-card">
+          <div class="workflow-step-num">2</div>
+          <svg class="workflow-icon" viewBox="0 0 24 24" fill="none" stroke="var(--folha)" stroke-width="1.5">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          <p>Desenvolvimento Web &amp; Código Sob Medida</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="workflow-card">
+          <div class="workflow-step-num">3</div>
+          <svg class="workflow-icon" viewBox="0 0 24 24" fill="none" stroke="var(--folha)" stroke-width="1.5">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          <p>Integração com CRM, APIs &amp; Ferramentas</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="workflow-card">
+          <div class="workflow-step-num">4</div>
+          <svg class="workflow-icon" viewBox="0 0 24 24" fill="none" stroke="var(--folha)" stroke-width="1.5">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+          <p>Testes de Performance &amp; Lançamento</p>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 36px;">
+        <a href="#" class="btn btn-dark btn-lg" data-modal="modal-invest">Solicitar Orçamento de Projeto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION (Leque 3D & Galeria Infinita) -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+
+      <!-- Dynamic Quote Rotator Block (Estilo Imagem 1) -->
+      <div class="portfolio-quote-block text-center">
+        <div class="quote-rotator-wrapper">
+          <blockquote class="portfolio-main-quote" id="quote-text">
+            “Design impecável, velocidade máxima de carregamento no celular e código limpo. Superou todas as expectativas do nosso conselho.”
+          </blockquote>
+          <div class="quote-author-name" id="quote-author">
+            Juliana Torres — CTO • SaaS &amp; Tecnologia
+          </div>
+        </div>
+
+        <div class="quote-label-divider">
+          <span>DEPOIMENTO DE CLIENTE</span>
+        </div>
+
+        <!-- Carousel Dots for Quote Rotator -->
+        <div class="quote-dots-nav" id="quote-dots">
+          <button class="quote-dot active" data-index="0" aria-label="Depoimento 1"></button>
+          <button class="quote-dot" data-index="1" aria-label="Depoimento 2"></button>
+          <button class="quote-dot" data-index="2" aria-label="Depoimento 3"></button>
+          <button class="quote-dot" data-index="3" aria-label="Depoimento 4"></button>
+        </div>
+
+        <div class="portfolio-stats-grid" style="margin-top: 48px;">
+          <div class="stat-box-clean">
+            <div class="stat-box-number">50+</div>
+            <div class="stat-box-desc">projetos entregues com código sob medida</div>
+          </div>
+          <div class="stat-box-clean">
+            <div class="stat-box-number">21+</div>
+            <div class="stat-box-desc">segmentos atendidos em web, apps e sistemas</div>
+          </div>
+          <div class="stat-box-clean">
+            <div class="stat-box-number">100%</div>
+            <div class="stat-box-desc">projetos desenvolvidos pela nossa equipe interna</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Built for Every Business & 3D Arc Fan Deck (Estilo Imagem 2) -->
+      <div class="portfolio-showcase-block">
+        <div class="section-header text-center">
+          <span class="sec-num">03 · SEGMENTOS &amp; PORTFÓLIO</span>
+          <h2>Desenvolvidos para todo tipo de negócio</h2>
+          <p>Projetos reais para empresas reais, do varejo a e-commerce, B2B e plataformas web.</p>
+        </div>
+
+        <!-- 3D Arc Fan Deck Container -->
+        <div class="portfolio-arc-container">
+          <div class="portfolio-arc-deck" id="arc-deck">
+            <!-- Project Card 1 -->
+            <div class="arc-card" data-card-id="1" style="--card-index: -3;">
+              <div class="arc-card-header">
+                <div class="arc-card-dots"><span></span><span></span><span></span></div>
+                <div class="arc-card-url">baldnomore.com</div>
+              </div>
+              <div class="arc-card-body serum-bg">
+                <div class="arc-badge">E-Commerce &amp; Beauty</div>
+                <h3>BALD NO MORE SERUM</h3>
+                <p>Potente blend com ativos botânicos e biotecnologia.</p>
+                <button class="arc-card-btn">Ver Projeto ↗</button>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="arc-card" data-card-id="2" style="--card-index: -2;">
+              <div class="arc-card-header">
+                <div class="arc-card-dots"><span></span><span></span><span></span></div>
+                <div class="arc-card-url">globalcareers.io</div>
+              </div>
+              <div class="arc-card-body careers-bg">
+                <div class="arc-badge">Institucional &amp; Carreiras</div>
+                <h3>Global Careers Worldwide</h3>
+                <p>Portal de recrutamento com filtros inteligentes.</p>
+                <button class="arc-card-btn">Ver Projeto ↗</button>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="arc-card" data-card-id="3" style="--card-index: -1;">
+              <div class="arc-card-header">
+                <div class="arc-card-dots"><span></span><span></span><span></span></div>
+                <div class="arc-card-url">lapimienta.com.br</div>
+              </div>
+              <div class="arc-card-body pimienta-bg">
+                <div class="arc-badge">Gastronomia &amp; Alimentos</div>
+                <h3>La Pimienta Food Group</h3>
+                <p>Catálogo digital interativo com mais de 200 itens.</p>
+                <button class="arc-card-btn">Ver Projeto ↗</button>
+              </div>
+            </div>
+
+            <!-- Project Card 4 (Center Destaque) -->
+            <div class="arc-card active-center" data-card-id="4" style="--card-index: 0;">
+              <div class="arc-card-header">
+                <div class="arc-card-dots"><span></span><span></span><span></span></div>
+                <div class="arc-card-url">ishinomoto-diesel.com</div>
+              </div>
+              <div class="arc-card-body diesel-bg">
+                <div class="arc-badge">Engenharia &amp; Indústria</div>
+                <h3>Ishinomoto Diesel Performance</h3>
+                <p>Site institucional e portal de telemetria desde 1982.</p>
+                <button class="arc-card-btn">Ver Projeto ↗</button>
+              </div>
+            </div>
+
+            <!-- Project Card 5 -->
+            <div class="arc-card" data-card-id="5" style="--card-index: 1;">
+              <div class="arc-card-header">
+                <div class="arc-card-dots"><span></span><span></span><span></span></div>
+                <div class="arc-card-url">smc-hibred.com</div>
+              </div>
+              <div class="arc-card-body agribg">
+                <div class="arc-badge">Agronegócio</div>
+                <h3>SMC Hi-Bred Seeds</h3>
+                <p>Expertise global em sementes com atuação local.</p>
+                <button class="arc-card-btn">Ver Projeto ↗</button>
+              </div>
+            </div>
+
+            <!-- Project Card 6 -->
+            <div class="arc-card" data-card-id="6" style="--card-index: 2;">
+              <div class="arc-card-header">
+                <div class="arc-card-dots"><span></span><span></span><span></span></div>
+                <div class="arc-card-url">reviewprograms.edu</div>
+              </div>
+              <div class="arc-card-body edu-bg">
+                <div class="arc-badge">EdTech &amp; Cursos</div>
+                <h3>Review Programs Portal</h3>
+                <p>Plataforma de simulados e exames preparatórios.</p>
+                <button class="arc-card-btn">Ver Projeto ↗</button>
+              </div>
+            </div>
+
+            <!-- Project Card 7 -->
+            <div class="arc-card" data-card-id="7" style="--card-index: 3;">
+              <div class="arc-card-header">
+                <div class="arc-card-dots"><span></span><span></span><span></span></div>
+                <div class="arc-card-url">app.aroe-crm.com</div>
+              </div>
+              <div class="arc-card-body crm-bg">
+                <div class="arc-badge">CRM &amp; Plataformas</div>
+                <h3>Aroe Sales Pipeline &amp; CRM</h3>
+                <p>Gestão comercial e propostas automatizadas.</p>
+                <button class="arc-card-btn">Ver Projeto ↗</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 40px;">
+          <button class="btn-portfolio-full" id="open-infinite-portfolio">
+            Ver portfólio completo <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FULLSCREEN INFINITE CANVAS PORTFOLIO MODAL (Estilo Imagem 3) -->
+  <div class="infinite-portfolio-overlay" id="infinite-portfolio-modal" aria-hidden="true">
+    <div class="infinite-top-bar">
+      <button class="btn-back-home" id="close-infinite-portfolio">
+        ← Voltar ao Início
+      </button>
+      <div class="drag-hint-pill">
+        <span>🖐️ Clique em qualquer espaço vazio e arraste para navegar</span>
+      </div>
+      <a href="#cta" class="btn btn-primary btn-sm" id="cta-canvas-btn">Fale Conosco ↗</a>
+    </div>
+
+    <div class="infinite-canvas-viewport" id="canvas-viewport">
+      <div class="infinite-canvas-grid" id="canvas-grid">
+        <!-- Canvas Mockup Item 1 -->
+        <div class="canvas-item card-style-1">
+          <div class="canvas-item-bar"><span>baldnomore.com</span></div>
+          <div class="canvas-item-preview">
+            <span class="canvas-tag">E-Commerce &amp; Beauty</span>
+            <h4>BALD NO MORE SERUM</h4>
+            <p>Landing page e e-commerce de alta conversão para marca de dermocosméticos.</p>
+          </div>
+        </div>
+
+        <!-- Canvas Mockup Item 2 -->
+        <div class="canvas-item card-style-2">
+          <div class="canvas-item-bar"><span>globalcareers.io</span></div>
+          <div class="canvas-item-preview">
+            <span class="canvas-tag">Carreiras &amp; RH</span>
+            <h4>Global Careers Worldwide</h4>
+            <p>Portal corporativo multinacional com integração a banco de talentos.</p>
+          </div>
+        </div>
+
+        <!-- Canvas Mockup Item 3 -->
+        <div class="canvas-item card-style-3">
+          <div class="canvas-item-bar"><span>lapimienta.com.br</span></div>
+          <div class="canvas-item-preview">
+            <span class="canvas-tag">Alimentos &amp; Varejo</span>
+            <h4>La Pimienta Food Group</h4>
+            <p>Site institucional e catálogo B2B responsivo para distribuidora.</p>
+          </div>
+        </div>
+
+        <!-- Canvas Mockup Item 4 -->
+        <div class="canvas-item card-style-4">
+          <div class="canvas-item-bar"><span>ishinomoto.com</span></div>
+          <div class="canvas-item-preview">
+            <span class="canvas-tag">Engenharia &amp; Indústria</span>
+            <h4>Ishinomoto Diesel Performance</h4>
+            <p>Portal industrial com catálogo técnico e agendamento de revisão.</p>
+          </div>
+        </div>
+
+        <!-- Canvas Mockup Item 5 -->
+        <div class="canvas-item card-style-5">
+          <div class="canvas-item-bar"><span>smc-hibred.com</span></div>
+          <div class="canvas-item-preview">
+            <span class="canvas-tag">Agronegócio</span>
+            <h4>SMC Hi-Bred Seeds</h4>
+            <p>Site institucional agro otimizado para navegação mobile no campo.</p>
+          </div>
+        </div>
+
+        <!-- Canvas Mockup Item 6 -->
+        <div class="canvas-item card-style-6">
+          <div class="canvas-item-bar"><span>reviewprograms.edu</span></div>
+          <div class="canvas-item-preview">
+            <span class="canvas-tag">EdTech &amp; Educação</span>
+            <h4>Review Programs Portal</h4>
+            <p>Plataforma de exames online e painel de progresso dos alunos.</p>
+          </div>
+        </div>
+
+        <!-- Canvas Mockup Item 7 -->
+        <div class="canvas-item card-style-7">
+          <div class="canvas-item-bar"><span>app.aroe-crm.com</span></div>
+          <div class="canvas-item-preview">
+            <span class="canvas-tag">CRM &amp; Gestão</span>
+            <h4>Aroe Sales Pipeline &amp; CRM</h4>
+            <p>Sistema web sob medida para gestão de leads e emissão de propostas.</p>
+          </div>
+        </div>
+
+        <!-- Canvas Mockup Item 8 -->
+        <div class="canvas-item card-style-8">
+          <div class="canvas-item-bar"><span>aurora-residences.com</span></div>
+          <div class="canvas-item-preview">
+            <span class="canvas-tag">Imobiliário &amp; Luxo</span>
+            <h4>Aurora Luxury Residences</h4>
+            <p>Landing page imobiliária de alto padrão com tour virtual 360°.</p>
+          </div>
+        </div>
+
+        <!-- Canvas Mockup Item 9 -->
+        <div class="canvas-item card-style-9">
+          <div class="canvas-item-bar"><span>zenith-logistics.com</span></div>
+          <div class="canvas-item-preview">
+            <span class="canvas-tag">Logística &amp; Transporte</span>
+            <h4>Zenith Express Logistics</h4>
+            <p>Portal de rastreamento de carga e cotação de frete instantânea.</p>
+          </div>
+        </div>
+
+        <!-- Canvas Mockup Item 10 -->
+        <div class="canvas-item card-style-10">
+          <div class="canvas-item-bar"><span>nexa-fintech.io</span></div>
+          <div class="canvas-item-preview">
+            <span class="canvas-tag">Fintech &amp; B2B</span>
+            <h4>Nexa Financial Gateway</h4>
+            <p>Dashboard de pagamentos corporativos e conciliação bancária.</p>
+          </div>
+        </div>
+
+        <!-- Canvas Mockup Item 11 -->
+        <div class="canvas-item card-style-11">
+          <div class="canvas-item-bar"><span>vitalis-health.com</span></div>
+          <div class="canvas-item-preview">
+            <span class="canvas-tag">Saúde &amp; Clínicas</span>
+            <h4>Vitalis Health Network</h4>
+            <p>Portal de agendamento de consultas médicas e prontuário digital.</p>
+          </div>
+        </div>
+
+        <!-- Canvas Mockup Item 12 -->
+        <div class="canvas-item card-style-12">
+          <div class="canvas-item-bar"><span>nexus-studio.design</span></div>
+          <div class="canvas-item-preview">
+            <span class="canvas-tag">Design &amp; Arquitetura</span>
+            <h4>Nexus Interior Architecture</h4>
+            <p>Portfólio interativo para escritório de arquitetura de alto padrão.</p>
+          </div>
+        </div>
+
+        <!-- REPETITION TILE 2 -->
+        <div class="canvas-item card-style-1"><div class="canvas-item-bar"><span>baldnomore.com</span></div><div class="canvas-item-preview"><span class="canvas-tag">E-Commerce</span><h4>BALD NO MORE</h4><p>Dermocosméticos de alta conversão.</p></div></div>
+        <div class="canvas-item card-style-2"><div class="canvas-item-bar"><span>globalcareers.io</span></div><div class="canvas-item-preview"><span class="canvas-tag">Carreiras</span><h4>Global Careers</h4><p>Portal corporativo multinacional.</p></div></div>
+        <div class="canvas-item card-style-3"><div class="canvas-item-bar"><span>lapimienta.com.br</span></div><div class="canvas-item-preview"><span class="canvas-tag">Alimentos</span><h4>La Pimienta</h4><p>Catálogo B2B responsivo.</p></div></div>
+        <div class="canvas-item card-style-4"><div class="canvas-item-bar"><span>ishinomoto.com</span></div><div class="canvas-item-preview"><span class="canvas-tag">Engenharia</span><h4>Ishinomoto Diesel</h4><p>Portal industrial e telemetria.</p></div></div>
+        <div class="canvas-item card-style-5"><div class="canvas-item-bar"><span>smc-hibred.com</span></div><div class="canvas-item-preview"><span class="canvas-tag">Agro</span><h4>SMC Hi-Bred</h4><p>Site agro otimizado para o campo.</p></div></div>
+        <div class="canvas-item card-style-6"><div class="canvas-item-bar"><span>reviewprograms.edu</span></div><div class="canvas-item-preview"><span class="canvas-tag">EdTech</span><h4>Review Programs</h4><p>Plataforma de exames online.</p></div></div>
+        <div class="canvas-item card-style-7"><div class="canvas-item-bar"><span>app.aroe-crm.com</span></div><div class="canvas-item-preview"><span class="canvas-tag">CRM</span><h4>Aroe CRM</h4><p>Gestão comercial automatizada.</p></div></div>
+        <div class="canvas-item card-style-8"><div class="canvas-item-bar"><span>aurora-residences.com</span></div><div class="canvas-item-preview"><span class="canvas-tag">Imobiliário</span><h4>Aurora Luxury</h4><p>Landing page com tour 360°.</p></div></div>
+        <div class="canvas-item card-style-9"><div class="canvas-item-bar"><span>zenith-logistics.com</span></div><div class="canvas-item-preview"><span class="canvas-tag">Logística</span><h4>Zenith Logistics</h4><p>Rastreamento e cotações.</p></div></div>
+        <div class="canvas-item card-style-10"><div class="canvas-item-bar"><span>nexa-fintech.io</span></div><div class="canvas-item-preview"><span class="canvas-tag">Fintech</span><h4>Nexa Financial</h4><p>Dashboard de pagamentos.</p></div></div>
+        <div class="canvas-item card-style-11"><div class="canvas-item-bar"><span>vitalis-health.com</span></div><div class="canvas-item-preview"><span class="canvas-tag">Saúde</span><h4>Vitalis Health</h4><p>Portal de consultas e prontuários.</p></div></div>
+        <div class="canvas-item card-style-12"><div class="canvas-item-bar"><span>nexus-studio.design</span></div><div class="canvas-item-preview"><span class="canvas-tag">Design</span><h4>Nexus Architecture</h4><p>Portfólio interativo de luxo.</p></div></div>
+
+        <!-- REPETITION TILE 3 -->
+        <div class="canvas-item card-style-1"><div class="canvas-item-bar"><span>baldnomore.com</span></div><div class="canvas-item-preview"><span class="canvas-tag">E-Commerce</span><h4>BALD NO MORE</h4><p>Dermocosméticos de alta conversão.</p></div></div>
+        <div class="canvas-item card-style-2"><div class="canvas-item-bar"><span>globalcareers.io</span></div><div class="canvas-item-preview"><span class="canvas-tag">Carreiras</span><h4>Global Careers</h4><p>Portal corporativo multinacional.</p></div></div>
+        <div class="canvas-item card-style-3"><div class="canvas-item-bar"><span>lapimienta.com.br</span></div><div class="canvas-item-preview"><span class="canvas-tag">Alimentos</span><h4>La Pimienta</h4><p>Catálogo B2B responsivo.</p></div></div>
+        <div class="canvas-item card-style-4"><div class="canvas-item-bar"><span>ishinomoto.com</span></div><div class="canvas-item-preview"><span class="canvas-tag">Engenharia</span><h4>Ishinomoto Diesel</h4><p>Portal industrial e telemetria.</p></div></div>
+        <div class="canvas-item card-style-5"><div class="canvas-item-bar"><span>smc-hibred.com</span></div><div class="canvas-item-preview"><span class="canvas-tag">Agro</span><h4>SMC Hi-Bred</h4><p>Site agro otimizado para o campo.</p></div></div>
+        <div class="canvas-item card-style-6"><div class="canvas-item-bar"><span>reviewprograms.edu</span></div><div class="canvas-item-preview"><span class="canvas-tag">EdTech</span><h4>Review Programs</h4><p>Plataforma de exames online.</p></div></div>
+        <div class="canvas-item card-style-7"><div class="canvas-item-bar"><span>app.aroe-crm.com</span></div><div class="canvas-item-preview"><span class="canvas-tag">CRM</span><h4>Aroe CRM</h4><p>Gestão comercial automatizada.</p></div></div>
+        <div class="canvas-item card-style-8"><div class="canvas-item-bar"><span>aurora-residences.com</span></div><div class="canvas-item-preview"><span class="canvas-tag">Imobiliário</span><h4>Aurora Luxury</h4><p>Landing page com tour 360°.</p></div></div>
+        <div class="canvas-item card-style-9"><div class="canvas-item-bar"><span>zenith-logistics.com</span></div><div class="canvas-item-preview"><span class="canvas-tag">Logística</span><h4>Zenith Logistics</h4><p>Rastreamento e cotações.</p></div></div>
+        <div class="canvas-item card-style-10"><div class="canvas-item-bar"><span>nexa-fintech.io</span></div><div class="canvas-item-preview"><span class="canvas-tag">Fintech</span><h4>Nexa Financial</h4><p>Dashboard de pagamentos.</p></div></div>
+        <div class="canvas-item card-style-11"><div class="canvas-item-bar"><span>vitalis-health.com</span></div><div class="canvas-item-preview"><span class="canvas-tag">Saúde</span><h4>Vitalis Health</h4><p>Portal de consultas e prontuários.</p></div></div>
+        <div class="canvas-item card-style-12"><div class="canvas-item-bar"><span>nexus-studio.design</span></div><div class="canvas-item-preview"><span class="canvas-tag">Design</span><h4>Nexus Architecture</h4><p>Portfólio interativo de luxo.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ SECTION (Dúvidas Frequentes - Layout Interativo Accordion) -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sec-num">04 · Dúvidas Frequentes</span>
+        <h2>Tudo o que você precisa saber antes de iniciar seu projeto</h2>
+        <p>Transparência total desde o primeiro contato até a entrega final.</p>
+      </div>
+
+      <div class="faq-accordion-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>Qual é o prazo médio de entrega de um site ou landing page sob medida?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer-content">
+            <p>Landing pages de alta conversão costumam ser entregues entre 7 e 14 dias úteis. Projetos de portais corporativos ou sistemas web sob medida variam de 3 a 6 semanas, dependendo da complexidade do briefing e das integrações necessárias.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>Vocês utilizam templates prontos ou desenvolvem código exclusivo?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer-content">
+            <p>Desenvolvemos 100% sob medida. Cada linha de código HTML, CSS e JS é construída do zero para a sua empresa, garantindo design exclusivo, SEO otimizado e pontuação máxima no Google PageSpeed (sem o peso de temas genéricos).</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>É possível integrar o site com nosso CRM, ERP ou meio de pagamento existente?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer-content">
+            <p>Com certeza. Conectamos seu produto digital a ferramentas como HubSpot, RD Station, Salesforce, Pipedrive, Stripe, Asaas, WhatsApp Web e APIs personalizadas de ERPs.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>Como funciona a manutenção e o suporte pós-lançamento?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer-content">
+            <p>Oferecemos acompanhamento pós-entrega com suporte técnico dedicado, monitoramento de servidores, relatórios de performance e atualizações preventivas para manter sua estrutura sempre no ar.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>Como solicito um orçamento para a minha empresa?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer-content">
+            <p>Basta preencher o formulário no rodapé ou clicar no botão "Fale conosco". Nossos engenheiros analisarão a necessidade do seu projeto e agendarão uma conversa sem compromisso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL FULL-WIDTH ORGANIC CTA SECTION (Layout 2 Colunas Split + Form Compacto 2 Passos) -->
+  <section class="global-cta-section" id="cta">
+    <div class="cta-green-content">
+      <div class="container cta-split-grid">
+        <!-- Left Side: Copywriting & Key Highlights -->
+        <div class="cta-left-text text-left">
+          <span class="sec-num" style="color: var(--semente);">05 · Fale Conosco</span>
+          <h2>Pronto para criar a estrutura digital que seu negócio precisa?</h2>
+          <p class="cta-subtext">Preencha ao lado e fale diretamente com nossos engenheiros e designers para planejar seu novo site ou sistema sob medida.</p>
+
+          <ul class="cta-highlights-list">
+            <li>
+              <span class="cta-check-icon">✓</span>
+              <span>Resposta garantida em menos de 24 horas úteis.</span>
+            </li>
+            <li>
+              <span class="cta-check-icon">✓</span>
+              <span>Análise técnica gratuita do seu projeto.</span>
+            </li>
+            <li>
+              <span class="cta-check-icon">✓</span>
+              <span>Sem compromisso ou cobranças ocultas.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Side: Compact 2-Step Interactive Form -->
+        <div class="cta-right-form-wrapper">
+          <form class="cta-2step-form" id="form-cta-2step">
+            <!-- Step Indicators Header -->
+            <div class="form-step-header">
+              <div class="step-progress-bar">
+                <div class="step-progress-fill" id="step-fill"></div>
+              </div>
+              <span class="step-label-text" id="step-label">Passo 1 de 2: Dados de Contato</span>
+            </div>
+
+            <!-- STEP 1 FIELDS -->
+            <div class="form-step-panel active" id="step-panel-1">
+              <div class="form-group text-left">
+                <label for="cta-name">Nome Completo</label>
+                <input type="text" id="cta-name" class="form-input cta-input" placeholder="ex: Alexander Wright" required>
+              </div>
+              <div class="form-group text-left">
+                <label for="cta-email">E-mail Corporativo</label>
+                <input type="email" id="cta-email" class="form-input cta-input" placeholder="alexander@empresa.com" required>
+              </div>
+              <button type="button" class="btn btn-primary btn-lg cta-step-next-btn" id="btn-next-step">
+                Continuar para o Projeto ➔
+              </button>
+            </div>
+
+            <!-- STEP 2 FIELDS -->
+            <div class="form-step-panel" id="step-panel-2">
+              <div class="form-group text-left">
+                <label for="cta-team">Tipo de Projeto</label>
+                <select id="cta-team" class="form-input cta-input" required>
+                  <option value="">Selecione o tipo de projeto...</option>
+                  <option value="landing-page">Landing Page de Alta Conversão</option>
+                  <option value="site-institucional">Site Institucional / Portal</option>
+                  <option value="crm-sistema">CRM / Sistema Sob Medida</option>
+                  <option value="outro">Outros Produtos Digitais</option>
+                </select>
+              </div>
+              <div class="form-group text-left">
+                <label for="cta-message">Detalhes / Telefone (Opcional)</label>
+                <textarea id="cta-message" class="form-input cta-input cta-textarea" rows="2" placeholder="Conte resumidamente sobre seu objetivo..."></textarea>
+              </div>
+              <div class="step-buttons-row">
+                <button type="button" class="btn-step-back" id="btn-prev-step">← Voltar</button>
+                <button type="submit" class="btn btn-primary btn-lg cta-submit-btn">Enviar Solicitação 🚀</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Linha orgânica com curvas entre o verde e o marrom -->
+    <div class="organic-wave-divider">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" fill="var(--casca)">
+        <path d="M0,32 C320,110 640,-20 960,80 C1200,120 1360,40 1440,60 L1440,120 L0,120 Z"></path>
+      </svg>
+    </div>
+
+    <div class="cta-brown-solid">
+      <!-- Transição sólida para o marrom Casca -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <div class="footer-contact-box">
+          <!-- Aroe Brand Image Logo in Footer -->
+          <div class="brand-logo footer-brand-logo">
+            <img src="image.png" alt="Aroe" class="footer-logo-img">
+          </div>
+          <p class="footer-brand-tagline">Tecnologia com raiz — Sites, landing pages e produtos digitais que permanecem.</p>
+          
+          <div style="margin-top: 16px;">
+            <a href="tel:+551140039820" class="phone-link">+55 (11) 4003-9820</a>
+          </div>
+          <a href="#" class="btn btn-secondary btn-sm" style="color:var(--semente); border-color:var(--semente); margin-top: 12px;" data-modal="modal-invest">Solicitar orçamento</a>
+        </div>
+
+        <div class="footer-nav-columns">
+          <!-- Col 1: Navegação -->
+          <div>
+            <div class="footer-column-title">Navegação</div>
+            <ul class="footer-links-list">
+              <li><a href="#about">Sobre nós</a></li>
+              <li><a href="#workflow">Processo</a></li>
+              <li><a href="#" id="footer-open-canvas">Portfólio Interativo ↗</a></li>
+              <li><a href="#faq">Dúvidas</a></li>
+              <li><a href="#cta">Contato</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 2: Privacidade -->
+          <div>
+            <div class="footer-column-title">Privacidade</div>
+            <ul class="footer-links-list">
+              <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+              <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+              <li><a href="conformidade-lgpd.html">Conformidade LGPD</a></li>
+              <li><a href="seguranca-da-informacao.html">Segurança da Informação</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Redes Sociais -->
+          <div>
+            <div class="footer-column-title">Redes Sociais</div>
+            <ul class="footer-links-list">
+              <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter / X</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: FALAR COM A AROE -->
+  <div class="modal-overlay" id="modal-invest" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close-btn" aria-label="Fechar Modal">✕</button>
+      <div class="modal-title">Solicitar Orçamento</div>
+      <div class="modal-desc">Converse com nossos especialistas para desenhar o site, landing page ou sistema ideal para a sua empresa.</div>
+      
+      <form class="modal-form" id="form-invest">
+        <div class="form-group">
+          <label for="invest-name">Nome Completo</label>
+          <input type="text" id="invest-name" class="form-input" placeholder="ex: Sarah Jenkins" required>
+        </div>
+        <div class="form-group">
+          <label for="invest-email">E-mail Corporativo</label>
+          <input type="email" id="invest-email" class="form-input" placeholder="sarah@empresa.com" required>
+        </div>
+        <div class="form-group">
+          <label for="invest-amount">Tipo de Projeto</label>
+          <select id="invest-amount" class="form-input" required>
+            <option value="">Selecione o projeto...</option>
+            <option value="landing-page">Landing Page de Alta Conversão</option>
+            <option value="site-institucional">Site Institucional / Portal</option>
+            <option value="crm-sistema">CRM / Sistema Sob Medida</option>
+            <option value="outro">Outros Produtos Digitais</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg" style="margin-top: 10px;">Solicitar Orçamento Gratuito</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
