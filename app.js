@@ -700,15 +700,14 @@ function initGsapAnimations() {
     clearProps: 'all'
   });
 
-  gsap.from('.arc-card', {
+  gsap.from('.portfolio-arc-container', {
     scrollTrigger: {
-      trigger: '#arc-deck',
+      trigger: '.portfolio-arc-container',
       start: 'top 85%'
     },
-    y: 60,
+    y: 50,
     opacity: 0,
-    duration: 0.8,
-    stagger: 0.1,
+    duration: 0.9,
     ease: 'power3.out',
     clearProps: 'all'
   });
