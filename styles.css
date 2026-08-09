@@ -1255,14 +1255,14 @@ section[id] {
   line-height: 1.5;
 }
 
-/* Built for Every Business & 3D Arc Deck Carousel (Estilo Imagem 2) */
+/* Built for Every Business & 3D Arc Deck Carousel */
 .portfolio-showcase-block {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .portfolio-arc-container {
   width: 100%;
-  padding: 60px 0 40px 0;
+  padding: 10px 0 20px 0;
   overflow: visible;
 }
 
