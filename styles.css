@@ -1315,6 +1315,105 @@ section[id] {
   border-color: var(--folha);
 }
 
+/* --------------------------------------------------------------------------
+   Arc Deck Multi-Step Scaling Ladder (1600px, 1400px, 1200px, 1000px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1600px) {
+  .portfolio-arc-deck {
+    height: 410px;
+  }
+  .arc-card {
+    width: 230px;
+    height: 330px;
+    margin: 0 -16px;
+    border-radius: 16px;
+  }
+  .arc-card-body {
+    padding: 22px 18px;
+  }
+  .arc-card-body h3 {
+    font-size: 1.3rem;
+  }
+  .arc-card-body p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .portfolio-arc-deck {
+    height: 380px;
+  }
+  .arc-card {
+    width: 205px;
+    height: 305px;
+    margin: 0 -14px;
+    border-radius: 14px;
+  }
+  .arc-card-body {
+    padding: 18px 14px;
+  }
+  .arc-card-body h3 {
+    font-size: 1.15rem;
+    line-height: 1.25;
+  }
+  .arc-card-body p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  .arc-badge {
+    font-size: 0.65rem;
+    padding: 3px 8px;
+  }
+  .arc-card-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .portfolio-arc-deck {
+    height: 350px;
+  }
+  .arc-card {
+    width: 180px;
+    height: 280px;
+    margin: 0 -12px;
+  }
+  .arc-card-body h3 {
+    font-size: 1.05rem;
+  }
+  .arc-card-body p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .portfolio-arc-deck {
+    height: 330px;
+  }
+  .arc-card {
+    width: 165px;
+    height: 260px;
+    margin: 0 -10px;
+  }
+  .arc-card-header {
+    height: 32px;
+  }
+  .arc-card-url {
+    font-size: 0.65rem;
+  }
+  .arc-card-body h3 {
+    font-size: 0.95rem;
+  }
+  .arc-card-body p {
+    font-size: 0.7rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
 .arc-card-header {
   height: 40px;
   background: #1e1310;
