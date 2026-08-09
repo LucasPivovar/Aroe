@@ -1275,9 +1275,9 @@ section[id] {
 }
 
 .arc-card {
-  width: 270px;
-  height: 370px;
-  border-radius: 20px;
+  width: 220px;
+  height: 320px;
+  border-radius: 16px;
   background: #FFFFFF;
   border: 1px solid var(--line-strong);
   box-shadow: 0 16px 40px rgba(38, 20, 16, 0.12);
@@ -1285,11 +1285,11 @@ section[id] {
   cursor: pointer;
   transform-origin: center bottom;
   transform:
-    rotate(calc(var(--card-index) * 5deg))
-    translateY(calc(abs(var(--card-index)) * 14px))
-    scale(calc(1 - abs(var(--card-index)) * 0.035));
+    rotate(calc(var(--card-index) * 4.5deg))
+    translateY(calc(abs(var(--card-index)) * 12px))
+    scale(calc(1 - abs(var(--card-index)) * 0.03));
   transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  margin: 0 -22px;
+  margin: 0 -16px;
   z-index: calc(20 - abs(var(--card-index)));
   overflow: visible;
   display: flex;
@@ -1301,18 +1301,54 @@ section[id] {
 .arc-card::before {
   content: '';
   position: absolute;
-  top: -30px;
+  top: -24px;
   left: -10px;
   right: -10px;
-  bottom: -60px;
+  bottom: -40px;
   z-index: -1;
 }
 
 .arc-card:hover {
-  transform: rotate(0deg) translateY(-32px) scale(1.14) !important;
+  transform: rotate(0deg) translateY(-20px) scale(1.08) !important;
   z-index: 100 !important;
-  box-shadow: 0 28px 70px rgba(38, 20, 16, 0.25);
+  box-shadow: 0 24px 60px rgba(38, 20, 16, 0.25);
   border-color: var(--folha);
+}
+
+.arc-badge {
+  font-size: clamp(0.6rem, 0.7vw, 0.7rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--semente);
+  background: rgba(255, 255, 255, 0.16);
+  padding: 4px 10px;
+  border-radius: 8px;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.arc-card-body h3 {
+  font-size: clamp(1rem, 1.25vw, 1.3rem);
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 10px;
+  word-break: break-word;
+}
+
+.arc-card-body p {
+  font-size: clamp(0.75rem, 0.85vw, 0.85rem);
+  color: rgba(255, 255, 255, 0.88);
+  margin-top: 6px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* --------------------------------------------------------------------------
